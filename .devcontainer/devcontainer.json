@@ -6,13 +6,13 @@
 	"image": "mcr.microsoft.com/devcontainers/base:noble",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-	"mounts": [
-		"type=bind,source=${env:HOME}/.ssh/agent.sock,target=/ssh-agent,consistency=cached",
-		"type=bind,source=${env:HOME}/.config/gh,target=/home/vscode/.config/gh,consistency=cached"
-	],
-	"remoteEnv": {
-		"SSH_AUTH_SOCK": "/ssh-agent"
-	},
+	// "mounts": [
+	// 	"type=bind,source=${env:HOME}/.ssh/agent.sock,target=/ssh-agent,consistency=cached",
+	// 	"type=bind,source=${env:HOME}/.config/gh,target=/home/vscode/.config/gh,consistency=cached"
+	// ],
+	// "remoteEnv": {
+	// 	"SSH_AUTH_SOCK": "/ssh-agent"
+	// },
 	// Run post-create setup script
 	"postCreateCommand": "bash .devcontainer/postCreate.sh"
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
