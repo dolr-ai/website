@@ -655,14 +655,30 @@
       background: var(--bg2);
       border-top: 1px solid var(--border);
       padding: 40px 7%;
+      display: flex; flex-direction: column;
+      gap: 24px;
+    }
+    .footer-top {
       display: flex; align-items: center;
       justify-content: space-between; flex-wrap: wrap; gap: 20px;
     }
     footer img { height: 28px; width: auto; }
-    footer p  { color: var(--muted2); font-size: 0.78rem; }
+    footer p  { color: var(--muted2); font-size: 0.78rem; line-height: 1.7; margin: 0; }
     footer a  { color: rgba(255,255,255,0.3); font-size: 0.78rem; text-decoration: none; transition: color 0.2s; }
     footer a:hover { color: var(--cyan); }
     .footer-links { display: flex; gap: 28px; flex-wrap: wrap; }
+    .footer-company {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
+    .footer-company p { margin-bottom: 4px; }
+    .footer-company p:last-child { margin-bottom: 0; }
+    .footer-company strong { color: rgba(255,255,255,0.55); font-weight: 600; }
+    .footer-company a { color: rgba(255,255,255,0.45); text-decoration: underline; font-size: inherit; }
+    .footer-copyright {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+    }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 1024px) {
@@ -678,7 +694,8 @@
       .creator-grid, .feat-grid, .testi-grid { grid-template-columns: 1fr; }
       .feat-card.feat-large { grid-column: span 1; flex-direction: column; }
       .tc.tc-featured { grid-column: span 1; flex-direction: column; }
-      footer { flex-direction: column; text-align: center; }
+      .footer-top { flex-direction: column; text-align: center; }
+      .footer-company, .footer-copyright { text-align: center; }
       section { padding: 72px 5%; }
     }
     @media (max-width: 480px) {
@@ -1328,13 +1345,23 @@
 
   <!-- ── FOOTER ── -->
   <footer>
-    <a href="#"><img src="assets/yral-logo-CMQgBDmW.png" alt="YRAL" width="86" height="28" /></a>
-    <div class="footer-links">
-      <a href="https://legacy.yral.com/" target="_blank" rel="noopener">Web App</a>
-      <a href="https://play.google.com/store/apps/details?id=com.yral.android.app&pcampaignid=web_share" target="_blank" rel="noopener">Android</a>
-      <a href="https://apps.apple.com/in/app/yral/id6740337368" target="_blank" rel="noopener">iOS</a>
+    <div class="footer-top">
+      <a href="#"><img src="assets/yral-logo-CMQgBDmW.png" alt="YRAL" width="86" height="28" /></a>
+      <div class="footer-links">
+        <a href="https://legacy.yral.com/" target="_blank" rel="noopener">Web App</a>
+        <a href="https://play.google.com/store/apps/details?id=com.yral.android.app&pcampaignid=web_share" target="_blank" rel="noopener">Android</a>
+        <a href="https://apps.apple.com/in/app/yral/id6740337368" target="_blank" rel="noopener">iOS</a>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-android/">Terms of Use</a>
+        <a href="mailto:support@yral.com">Contact</a>
+      </div>
     </div>
-    <p>© 2026 YRAL. All rights reserved.</p>
+    <div class="footer-company">
+      <p>YRAL is operated by <strong>GoBazzinga Inc.</strong>, a Delaware C-Corporation (File No. 6003019).</p>
+      <p>Registered office: 2055 Limestone Rd STE 200C, Wilmington, DE 19808, USA</p>
+      <p>Contact: <a href="mailto:support@yral.com">support@yral.com</a></p>
+    </div>
+    <p class="footer-copyright">© 2026 GoBazzinga Inc. All rights reserved. YRAL® is a registered trademark (USPTO Reg. No. 7893324).</p>
   </footer>
 
   <script>
