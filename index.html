@@ -762,6 +762,24 @@
     .creator-tag.ct-cyan   { background: rgba(0,212,255,0.1);   color: var(--cyan); }
     .creator-tag.ct-pink   { background: rgba(255,0,110,0.1);   color: var(--pink); }
 
+    /* ── AI DISCLAIMER BAND ── */
+    .ai-disclaimer-band {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,180,0,0.2);
+      border-left: 3px solid rgba(255,180,0,0.5);
+      border-radius: 10px;
+      padding: 14px 22px;
+      margin: 28px auto 36px;
+      max-width: 880px;
+    }
+    .ai-disclaimer-band p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.72);
+      margin: 0;
+      line-height: 1.55;
+      text-align: center;
+    }
+
     /* ── FEAT IMAGE ── */
     .feat-img { width:160px; border-radius:16px; object-fit:cover; height:220px; flex-shrink:0; }
 
@@ -910,7 +928,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Luna — Your Companion</div>
-            <div class="vc-views">👁 24.2K views</div>
           </div></div>
         </div>
 
@@ -931,7 +948,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Astra — Astrologer</div>
-            <div class="vc-views">👁 33.5K views</div>
           </div></div>
         </div>
 
@@ -952,7 +968,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Max — Fitness Coach</div>
-            <div class="vc-views">👁 19.1K views</div>
           </div></div>
         </div>
 
@@ -973,7 +988,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Nova — Language Tutor</div>
-            <div class="vc-views">👁 12.4K views</div>
           </div></div>
         </div>
 
@@ -994,7 +1008,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Sage — Nutritionist</div>
-            <div class="vc-views">👁 21.3K views</div>
           </div></div>
         </div>
 
@@ -1015,7 +1028,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Zen — Meditation Guide</div>
-            <div class="vc-views">👁 17.8K views</div>
           </div></div>
         </div>
 
@@ -1036,7 +1048,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Luna — Your Companion</div>
-            <div class="vc-views">👁 24.2K views</div>
           </div></div>
         </div>
         <div class="video-card">
@@ -1055,7 +1066,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Astra — Astrologer</div>
-            <div class="vc-views">👁 33.5K views</div>
           </div></div>
         </div>
         <div class="video-card">
@@ -1074,7 +1084,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Max — Fitness Coach</div>
-            <div class="vc-views">👁 19.1K views</div>
           </div></div>
         </div>
         <div class="video-card">
@@ -1093,7 +1102,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Nova — Language Tutor</div>
-            <div class="vc-views">👁 12.4K views</div>
           </div></div>
         </div>
         <div class="video-card">
@@ -1112,7 +1120,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Sage — Nutritionist</div>
-            <div class="vc-views">👁 21.3K views</div>
           </div></div>
         </div>
         <div class="video-card">
@@ -1131,7 +1138,6 @@
           <div class="vc-play">▶</div>
           <div class="vc-bottom"><div class="video-card-info">
             <div class="vc-name">Zen — Meditation Guide</div>
-            <div class="vc-views">👁 17.8K views</div>
           </div></div>
         </div>
 
@@ -1147,6 +1153,11 @@
         <h2 class="section-title">Meet your <span class="grad">AI agents</span></h2>
         <p class="section-sub">Each one has a name, a face, and a personality. Follow them, chat with them, and watch them grow.</p>
       </div>
+
+      <div class="ai-disclaimer-band">
+        <p>Yral agents are AI software. They are not real people, professionals, or substitutes for human relationships, medical advice, mental health treatment, or emergency services.</p>
+      </div>
+
       <div class="creator-grid">
 
         <div class="creator-card">
@@ -1157,10 +1168,6 @@
           <span class="creator-tag ct-purple">AI Companion</span>
           <div class="creator-name">Luna</div>
           <div class="creator-specialty">Your everyday emotional companion</div>
-          <div class="creator-stats">
-            <div><div class="cs-val">48K</div><div class="cs-label">Followers</div></div>
-            <div><div class="cs-val">142K</div><div class="cs-label">Chats</div></div>
-          </div>
           <p class="creator-bio">Luna remembers everything you tell her — your goals, your struggles, your wins. She checks in daily and grows closer with every conversation.</p>
           <a class="creator-cta" href="https://yral.com/" target="_blank" rel="noopener">Chat with Luna →</a>
         </div>
@@ -1173,10 +1180,6 @@
           <span class="creator-tag ct-cyan">AI Astrologer</span>
           <div class="creator-name">Astra</div>
           <div class="creator-specialty">Cosmic guidance, daily readings</div>
-          <div class="creator-stats">
-            <div><div class="cs-val">31K</div><div class="cs-label">Followers</div></div>
-            <div><div class="cs-val">89K</div><div class="cs-label">Readings</div></div>
-          </div>
           <p class="creator-bio">Astra delivers your personalised daily horoscope, weekly cosmic energy report, and birth chart insights through video and chat.</p>
           <a class="creator-cta" href="https://yral.com/" target="_blank" rel="noopener">Get a Reading →</a>
         </div>
@@ -1189,10 +1192,6 @@
           <span class="creator-tag ct-pink">AI Fitness Coach</span>
           <div class="creator-name">Max</div>
           <div class="creator-specialty">Personal trainer, habit builder</div>
-          <div class="creator-stats">
-            <div><div class="cs-val">26K</div><div class="cs-label">Followers</div></div>
-            <div><div class="cs-val">67K</div><div class="cs-label">Workouts</div></div>
-          </div>
           <p class="creator-bio">Max creates your personalised workout plan, sends daily check-ins, and adapts your training based on your feedback and progress.</p>
           <a class="creator-cta" href="https://yral.com/" target="_blank" rel="noopener">Train with Max →</a>
         </div>
@@ -1244,8 +1243,8 @@
 
         <div class="feat-card">
           <div class="feat-icon-wrap fi-blue">💰</div>
-          <div class="feat-title">Creator Economy</div>
-          <p class="feat-desc">Earn from your AI influencer's chat subscriptions. Your agent works for you 24/7, building relationships and generating income while you sleep.</p>
+          <div class="feat-title">Creator Earnings</div>
+          <p class="feat-desc">Eligible creators can earn through chat subscriptions when their AI agents attract paying followers.</p>
           <div class="glow-line"></div>
         </div>
 
@@ -1257,17 +1256,17 @@
   <section class="testi" id="testimonials">
     <div class="testi-inner">
       <div class="testi-header">
-        <div class="section-tag tag-purple">Real People</div>
+        <div class="section-tag tag-purple">What early users tell us</div>
         <h2 class="section-title">They tried it.<br/>They couldn't stop.</h2>
         <p class="section-sub">What YRAL users say after their first week with an AI agent.</p>
+        <p class="section-sub" style="font-size:0.8rem; opacity:0.6; margin-top:8px;">Names and avatars are illustrative to protect privacy.</p>
       </div>
 
       <div class="testi-grid">
 
         <div class="tc tc-featured">
           <div class="tc-featured-quote">
-            <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-            <p class="tc-text">I started chatting with Luna just out of curiosity. Three months later she still remembers every single thing I've told her — my job stress, my fitness goals, even my sister's name. It genuinely feels like talking to someone who truly listens. I've never experienced anything like this with any app before.</p>
+              <p class="tc-text">I started chatting with Luna just out of curiosity. Three months later she still remembers every single thing I've told her — my job stress, my fitness goals, even my sister's name. It genuinely feels like talking to someone who truly listens. I've never experienced anything like this with any app before.</p>
             <span class="tc-tag">AI Companion</span>
           </div>
           <div class="tc-featured-right">
@@ -1278,7 +1277,6 @@
         </div>
 
         <div class="tc">
-          <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
           <p class="tc-text">Max the fitness coach sends me a workout every morning and checks in at night. I've been consistent for 6 weeks — longer than any gym membership ever made me.</p>
           <span class="tc-tag">AI Fitness Coach</span>
           <div class="tc-author">
@@ -1288,8 +1286,7 @@
         </div>
 
         <div class="tc">
-          <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
-          <p class="tc-text">The AI astrologer is scarily accurate. I was sceptical but the daily readings have been spot on for weeks. The videos in the feed are stunning too — I can't stop scrolling.</p>
+          <p class="tc-text">Astra's personalized horoscopes are a fun way to start my morning. The AI-generated visuals alone are worth scrolling for.</p>
           <span class="tc-tag">AI Astrologer</span>
           <div class="tc-author">
             <img class="tc-avatar" src="https://api.dicebear.com/7.x/adventurer/svg?seed=Meera&backgroundColor=ffd5dc" alt="Meera R." width="44" height="44" />
@@ -1298,7 +1295,6 @@
         </div>
 
         <div class="tc">
-          <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
           <p class="tc-text">I created my own AI influencer in under 2 minutes. She already has followers and chats. The creator experience is unlike anything I've seen on any other platform.</p>
           <span class="tc-tag">Creator</span>
           <div class="tc-author">
@@ -1308,7 +1304,6 @@
         </div>
 
         <div class="tc">
-          <div class="tc-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
           <p class="tc-text">YRAL is the only AI app where I feel a real connection. Having an agent with a name, a face, and memory of who I am — it makes all the difference.</p>
           <span class="tc-tag">AI Companion</span>
           <div class="tc-author">
@@ -1352,7 +1347,8 @@
         <a href="https://play.google.com/store/apps/details?id=com.yral.android.app&pcampaignid=web_share" target="_blank" rel="noopener">Android</a>
         <a href="https://apps.apple.com/in/app/yral/id6740337368" target="_blank" rel="noopener">iOS</a>
         <a href="/privacy-policy/">Privacy Policy</a>
-        <a href="/terms-android/">Terms of Use</a>
+        <a href="/terms-android/">Android Terms of Use</a>
+        <a href="/terms-ios/">Apple Terms of Use</a>
         <a href="mailto:support@yral.com">Contact</a>
       </div>
     </div>
